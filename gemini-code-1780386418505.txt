@@ -1,0 +1,21 @@
+my-data-pipeline/
+├── .github/workflows/         # CI/CD deployment automation
+│   └── ci-cd.yml
+├── config/                    # Configuration settings (no secrets!)
+│   └── config.yaml
+├── dags/                      # Airflow / Prefect Orchestration workflows
+│   └── elt_pipeline_dag.py
+├── infra/                     # Infrastructure as Code (Terraform)
+│   ├── main.tf
+│   └── variables.tf
+├── src/                       # Core ETL / ELT processing code
+│   ├── __init__.py
+│   ├── extract.py
+│   ├── transform.py
+│   └── load.py
+├── tests/                     # Unit and integration tests
+│   └── test_transform.py
+├── .gitignore                 # Files Git should ignore (credentials, venv)
+├── README.md                  # Project documentation (The most important file!)
+├── docker-compose.yml         # Local environment setup
+└── requirements.txt           # Python dependencies
